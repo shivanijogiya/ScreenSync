@@ -1,0 +1,25 @@
+import paho.mqtt.client as mqtt
+
+BROKER = "localhost"
+TOPIC = "devices/heartbeat"
+
+
+def on_connect(client, userdata, flags, rc):
+    print("Connected to MQTT Broker")
+    client.subscribe(TOPIC)
+
+
+def on_message(client, userdata, msg):
+    print(f"MQTT Message Received: {msg.payload.decode()}")
+
+
+def start_mqtt():
+
+    client = mqtt.Client()
+
+    client.on_connect = on_connect
+    client.on_message = on_message
+
+    client.connect(BROKER, 1883, 60)
+
+    client.loop_start()
