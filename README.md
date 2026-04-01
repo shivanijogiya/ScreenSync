@@ -1,266 +1,286 @@
-# 🚨 Smart Multi-Device Safety & Behavior Intelligence System
+#  ScreenSync — Cross-Device Intelligent Screen-Time Management System
 
-## 📌 Overview
+---
 
-This project is an **AI-powered safety and behavioral intelligence platform** that integrates:
+##  Overview
 
-* 📍 Real-time location tracking
-* 📊 Multi-device screen-time monitoring
-* 🤖 Retrieval-Augmented Generation (RAG) based AI assistance
-* 🚨 Emergency response mechanisms (gesture-based triggers like shake detection)
+**ScreenSync** is a **distributed, real-time, multi-device screen-time management system** that intelligently coordinates usage across devices such as phones, tablets, and laptops.
 
-The system is designed to **enhance personal safety (especially for women)** while also providing **deep behavioral insights across devices**.
+Unlike traditional screen-time trackers, ScreenSync introduces:
+
+* 🔄 Cross-device coordination
+* ⚡ Real-time event-driven communication
+* 🧠 Adaptive and context-aware control
+* 🔐 Privacy-preserving intelligence
 
 ---
 
 ## 🎯 Problem Statement
 
-Existing solutions:
+Current screen-time systems:
 
-* Track **only one device**
-* Provide **basic screen time stats**
-* Lack **real-time safety integration**
-* Do not use **AI for contextual assistance**
-
-👉 There is NO unified system combining:
-
-* Safety + Tracking + AI + Multi-device analytics
+* ❌ Work per-device (no coordination)
+* ❌ Use static limits (no adaptability)
+* ❌ Lack real-time synchronization
+* ❌ Ignore user context (exam time, location, etc.)
 
 ---
 
 ## 💡 Proposed Solution
 
-We propose a **cross-platform intelligent system** that:
+ScreenSync provides a **unified distributed system** where:
 
-* Tracks user activity across **multiple devices**
-* Uses **AI (RAG model)** for smart responses
-* Detects **emergency situations (gesture/shake)**
-* Provides **actionable insights** for:
-
-  * Productivity
-  * Safety
-  * Behavioral patterns
+* All devices are connected
+* Usage is monitored in real-time
+* Limits are dynamically adjusted
+* Decisions are intelligent and context-aware
 
 ---
 
-## 🚀 Key Features
+## 🏗️ System Architecture
 
-### 🛡️ Safety Features
-
-* Shake detection for emergency trigger
-* Live location sharing
-* SOS alert system
-* Background monitoring
-
-### 📊 Tracking Features
-
-* Multi-device screen time tracking
-* Device-wise usage analytics
-* Hourly / daily breakdown
-* Pattern detection (routine, sleep, etc.)
-
-### 🤖 AI Features
-
-* RAG-based chatbot
-* Context-aware assistance
-* Query-based insights (e.g., "Why am I unproductive?")
-* Personalized recommendations
-
-### 📱 Cross-Platform Integration
-
-* Mobile (React Native / Expo)
-* Web dashboard
-* Backend logging system
+```
+Devices (Phone / Tablet / Laptop)
+        │
+        ▼
+   MQTT Broker (Mosquitto)
+        │
+        ▼
+ FastAPI Backend (Coordinator)
+        │
+        ▼
+ PostgreSQL Database
+        │
+        ▼
+ Intelligent Decision Engine
+```
 
 ---
 
-## 🧠 System Architecture
+## 🔁 Workflow
 
-```
-Frontend (React Native + Web)
-        ↓
-Backend (Node.js / FastAPI)
-        ↓
-Database (MongoDB / Firebase)
-        ↓
-AI Layer (RAG Model + Embeddings)
-        ↓
-Tracking Engine (Device Logs + Sensors)
-```
+1. **Device Registration**
+
+   * Each device registers once and gets a unique ID
+
+2. **Heartbeat Mechanism**
+
+   * Devices periodically send heartbeat signals
+   * Backend tracks device status (online/offline)
+
+3. **Real-time Communication (MQTT)**
+
+   * Devices publish usage updates
+   * Backend listens instantly (event-driven)
+
+4. **State Synchronization**
+
+   * Backend updates device status and usage
+
+5. **Decision Engine**
+
+   * Applies intelligent rules (rebalancing, context)
+
+6. **Action Enforcement**
+
+   * Updated limits sent to devices
+
+---
+
+## 🔥 Key Features / Novelty (Patent-Oriented)
+
+### 1️⃣ Cross-Device Budget Rebalancing Algorithm
+
+* Dynamically redistributes screen-time across devices
+* Based on usage patterns and priorities
+
+📌 Example:
+
+* Tablet → study apps → more time
+* Phone → social media → reduced time
+
+👉 **Novelty**: Adaptive, non-static time allocation
+
+---
+
+### 2️⃣ Federated Screen-Time Learning
+
+* Devices do NOT share raw data
+* Only model updates are sent
+* Backend aggregates insights
+
+✔ Privacy-preserving
+✔ Distributed ML approach
+
+👉 **Patent Potential**: Federated behavioral modeling for digital well-being
+
+---
+
+### 3️⃣ Context-Aware Enforcement Engine
+
+* Uses:
+
+  * Time (day/night)
+  * Location (home/college)
+  * Calendar (exam periods)
+
+📌 Example:
+
+* Exam week + night → stricter limits
+
+👉 **Novelty**: Multi-context adaptive restriction system
+
+---
+
+### 4️⃣ Conflict Resolution Protocol
+
+* Handles inconsistent states across devices
+
+Uses:
+
+* Timestamp comparison
+* Device priority
+
+👉 **Novelty**: Distributed state reconciliation for user control systems
+
+---
+
+### 5️⃣ Emergency Override with Quorum
+
+* User requests extra time
+* Requires approval from:
+
+  * Parent device
+  * Admin
+  * OR 2-of-3 device consensus
+
+👉 Inspired by distributed consensus systems
 
 ---
 
 ## ⚙️ Tech Stack
 
-### 👨‍💻 Frontend
-
-* React Native (Expo)
-* TypeScript
-* Tailwind / NativeWind (UI)
-* Map integration (Google Maps API / Mapbox)
-
 ### 🧩 Backend
 
-* Node.js / FastAPI
-* REST APIs
-* WebSockets (real-time alerts)
+* FastAPI (Python)
+* SQLAlchemy (ORM)
+* PostgreSQL (Database)
 
-### 🗄️ Database
+### 📡 Real-Time Communication
 
-* MongoDB / Firebase
-* Real-time data sync
+* MQTT (Mosquitto Broker)
+* paho-mqtt (Python client)
 
-### 🤖 AI / ML
+### 🧠 AI / Analytics
 
-* RAG (Retrieval-Augmented Generation)
-* Vector DB (FAISS / Pinecone)
-* Embeddings (OpenAI / HuggingFace)
+* Python
+* PyTorch / TensorFlow Lite (future)
+* Federated Learning (optional)
 
-### 📡 Tracking & Sensors
+### 🔐 Security & Privacy
 
-* Device activity logs
-* Motion sensors (accelerometer for shake)
-* Location APIs
+* OAuth 2.0 (Authentication)
+* End-to-End Encryption (planned)
+* Device-level anonymization
+* Zero-knowledge policy concepts
 
----
+### 📱 Mobile / Frontend
 
-## 🔥 Novelty (Patent-Worthy Contributions)
-
-### ⭐ 1. Multi-Device Behavioral Intelligence
-
-Unlike existing systems, this project:
-
-* Combines **usage data from multiple devices**
-* Provides **unified behavioral insights**
+* Android → Kotlin + UsageStatsManager
+* iOS → Swift + Screen Time API
+* Tablet → Flutter / Native
 
 ---
 
-### ⭐ 2. Safety + Productivity Hybrid System
+## 🧠 Distributed System Concepts Used
 
-* First system integrating:
-
-  * **Women safety mechanisms**
-  * **Behavioral tracking analytics**
-* Enables **context-aware emergency detection**
-
----
-
-### ⭐ 3. RAG-Based Personalized Assistance
-
-* AI does NOT rely only on static APIs
-* Uses:
-
-  * User data
-  * Context
-  * Retrieved knowledge
-    👉 to generate **highly personalized responses**
+* Event-driven architecture
+* Asynchronous messaging
+* Node health monitoring (heartbeat)
+* Distributed consensus (quorum)
+* State synchronization
+* Fault detection (offline detection)
 
 ---
 
-### ⭐ 4. Gesture-Based Emergency Trigger
+## ⚠️ Limitations
 
-* Shake detection → triggers SOS
-* Works even without UI interaction
-* Useful in **panic situations**
-
----
-
-### ⭐ 5. Insight from Absence of Data
-
-* Detects:
-
-  * Sleep patterns
-  * Inactivity
-* Uses **negative data (no usage)** as signal
+1. OS Restrictions (especially iOS APIs)
+2. Battery consumption (continuous tracking)
+3. Privacy concerns (usage data sensitivity)
+4. Network dependency (sync delays possible)
 
 ---
 
-### ⭐ 6. Context-Aware Recommendations
+## 🔮 Future Scope
 
-* Suggests:
-
-  * Reduce phone usage
-  * Improve productivity
-  * Safety alerts based on environment
-
----
-
-## 🧪 Future Scope
-
-* 🔗 IoT integration (smart wearables)
-* 🧠 Predictive AI (danger prediction)
-* 🎥 Camera-based threat detection
-* 🌍 Public safety network integration
+* ⌚ Wearable integration (smartwatch monitoring)
+* 🏫 School / enterprise deployments
+* 🧘 Digital detox recommendations
+* 🧠 Mental health prediction models
+* 🤖 Fully automated AI-driven control
 
 ---
 
-## 📦 Installation & Setup
+## 🏆 Project Significance
 
-### 🔹 Backend
+This project goes beyond a basic application and demonstrates:
 
-```bash
+* Real-world distributed system design
+* Scalable architecture using MQTT
+* Intelligent decision-making systems
+* Strong potential for patent and research
+
+---
+
+## 🧪 How to Run (Quick Setup)
+
+### 1. Start PostgreSQL
+
+* Open pgAdmin
+
+### 2. Start MQTT Broker
+
+```
+"E:\Files\Mosquitto\mosquitto.exe" -v
+```
+
+### 3. Start Backend
+
+```
 cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
+venv\Scripts\activate
+uvicorn app.main:app --reload --port 8001
 ```
 
-### 🔹 Frontend
+### 4. Open API Docs
 
-```bash
-cd frontend
-npm install
-npx expo start
+```
+http://127.0.0.1:8001/docs
 ```
 
 ---
 
-## ▶️ How It Works
+## 🎯 Final Summary
 
-1. User installs app on devices
-2. System tracks:
+ScreenSync is:
 
-   * Screen usage
-   * Location
-   * Motion
-3. Data sent to backend
-4. AI processes + generates insights
-5. Emergency triggers send alerts
+> A **real-time distributed intelligent system** that coordinates and optimizes screen usage across multiple devices using event-driven communication and adaptive decision-making.
 
 ---
 
-## 📊 Use Cases
+## 👩‍💻 Author
 
-* 👩 Women safety systems
-* 🎓 Student productivity tracking
-* 👨‍💼 Workplace monitoring
-* 🧠 Behavioral research
+Shivani Jogiya
+(Distributed Computing Project)
 
 ---
 
-## ⚠️ Privacy & Ethics
+## ⭐ Status
 
-* Data is **user-controlled**
-* Sensitive data is **encrypted**
-* Users can:
-
-  * Enable/disable tracking
-  * Control data sharing
+✔ Backend complete
+✔ MQTT integration done
+✔ Real-time sync working
+🔄 Algorithm development in progress
 
 ---
-
-## 🤝 Contributors
-
-* Shivani Tusharbhai Jogiya
-* Team Members (if any)
-
----
-
-## 📜 License
-
-This project is intended for **research, academic, and innovation purposes**.
-
----
-
-## 💬 Final Note
-
-This system is not just a tracker — it is a **behavioral intelligence + safety ecosystem**, bridging the gap between **AI, human behavior, and real-world protection**.
