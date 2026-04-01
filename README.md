@@ -235,7 +235,7 @@ This project goes beyond a basic application and demonstrates:
 
 ### 1. Start PostgreSQL
 
-* Open pgAdmin
+ Open pgAdmin
 
 ### 2. Start MQTT Broker
 
