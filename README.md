@@ -6,25 +6,25 @@
 
 Unlike traditional screen-time trackers, ScreenSync introduces:
 
-* 🔄 Cross-device coordination
-* ⚡ Real-time event-driven communication
-* 🧠 Adaptive and context-aware control
-* 🔐 Privacy-preserving intelligence
+* Cross-device coordination
+* Real-time event-driven communication
+* Adaptive and context-aware control
+* Privacy-preserving intelligence
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Current screen-time systems:
 
-* ❌ Work per-device (no coordination)
-* ❌ Use static limits (no adaptability)
-* ❌ Lack real-time synchronization
-* ❌ Ignore user context (exam time, location, etc.)
+*  Work per-device (no coordination)
+*  Use static limits (no adaptability)
+*  Lack real-time synchronization
+*  Ignore user context (exam time, location, etc.)
 
 ---
 
-## 💡 Proposed Solution
+##  Proposed Solution
 
 ScreenSync provides a **unified distributed system** where:
 
@@ -35,7 +35,7 @@ ScreenSync provides a **unified distributed system** where:
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 Devices (Phone / Tablet / Laptop)
@@ -55,7 +55,7 @@ Devices (Phone / Tablet / Laptop)
 
 ---
 
-## 🔁 Workflow
+##  Workflow
 
 1. **Device Registration**
 
@@ -85,9 +85,9 @@ Devices (Phone / Tablet / Laptop)
 
 ---
 
-## 🔥 Key Features / Novelty (Patent-Oriented)
+##  Key Features / Novelty (Patent-Oriented)
 
-### 1️⃣ Cross-Device Budget Rebalancing Algorithm
+###  Cross-Device Budget Rebalancing Algorithm
 
 * Dynamically redistributes screen-time across devices
 * Based on usage patterns and priorities
