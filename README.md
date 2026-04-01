@@ -1,7 +1,5 @@
 #  ScreenSync — Cross-Device Intelligent Screen-Time Management System
 
----
-
 ##  Overview
 
 **ScreenSync** is a **distributed, real-time, multi-device screen-time management system** that intelligently coordinates usage across devices such as phones, tablets, and laptops.
