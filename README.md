@@ -92,12 +92,12 @@ Devices (Phone / Tablet / Laptop)
 * Dynamically redistributes screen-time across devices
 * Based on usage patterns and priorities
 
-📌 Example:
+ Example:
 
 * Tablet → study apps → more time
 * Phone → social media → reduced time
 
-👉 **Novelty**: Adaptive, non-static time allocation
+ **Novelty**: Adaptive, non-static time allocation
 
 ---
 
