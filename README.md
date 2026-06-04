@@ -110,7 +110,7 @@ Devices (Phone / Tablet / Laptop)
 ✔ Privacy-preserving
 ✔ Distributed ML approach
 
-👉 **Patent Potential**: Federated behavioral modeling for digital well-being
+ **Patent Potential**: Federated behavioral modeling for digital well-being
 
 ---
 
