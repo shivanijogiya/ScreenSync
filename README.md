@@ -164,12 +164,12 @@ Uses:
 * SQLAlchemy (ORM)
 * PostgreSQL (Database)
 
-### 📡 Real-Time Communication
+### Real-Time Communication
 
 * MQTT (Mosquitto Broker)
 * paho-mqtt (Python client)
 
-### 🧠 AI / Analytics
+### AI / Analytics
 
 * Python
 * PyTorch / TensorFlow Lite (future)
