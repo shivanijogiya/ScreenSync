@@ -1,4 +1,4 @@
-#  ScreenSync : Cross-Device Intelligent Screen-Time Management System
+#  ScreenSync : Cross-Device Intelligent Distributed Screen-Time Management System
 
 ##  Overview
 
