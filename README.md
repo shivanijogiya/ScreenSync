@@ -143,7 +143,7 @@ Uses:
 
 ---
 
-### 5️⃣ Emergency Override with Quorum
+###  Emergency Override with Quorum
 
 * User requests extra time
 * Requires approval from:
