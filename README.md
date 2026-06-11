@@ -114,7 +114,7 @@ Devices (Phone / Tablet / Laptop)
 
 ---
 
-### 3️⃣ Context-Aware Enforcement Engine
+### Context-Aware Enforcement Engine
 
 * Uses:
 
