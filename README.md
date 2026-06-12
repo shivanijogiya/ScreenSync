@@ -101,7 +101,7 @@ Devices (Phone / Tablet / Laptop)
 
 ---
 
-### 2️⃣ Federated Screen-Time Learning
+### Federated Screen-Time Learning
 
 * Devices do NOT share raw data
 * Only model updates are sent
