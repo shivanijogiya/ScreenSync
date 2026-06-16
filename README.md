@@ -129,7 +129,7 @@ Devices (Phone / Tablet / Laptop)
 
 ---
 
-### 4️⃣ Conflict Resolution Protocol
+### Conflict Resolution Protocol
 
 * Handles inconsistent states across devices
 
