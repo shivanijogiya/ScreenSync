@@ -32,7 +32,6 @@ ScreenSync provides a **unified distributed system** where:
 * Usage is monitored in real-time
 * Limits are dynamically adjusted
 * Decisions are intelligent and context-aware
-
 ---
 
 ##  System Architecture
