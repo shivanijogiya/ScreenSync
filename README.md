@@ -273,7 +273,7 @@ Shivani Jogiya
 
 ---
 
-## ⭐ Status
+## Status
 
 ✔ Backend complete
 ✔ MQTT integration done
