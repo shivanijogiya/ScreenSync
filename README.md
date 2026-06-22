@@ -121,11 +121,11 @@ Devices (Phone / Tablet / Laptop)
   * Location (home/college)
   * Calendar (exam periods)
 
-📌 Example:
+ Example:
 
 * Exam week + night → stricter limits
 
-👉 **Novelty**: Multi-context adaptive restriction system
+ **Novelty**: Multi-context adaptive restriction system
 
 ---
 
