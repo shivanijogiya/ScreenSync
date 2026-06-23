@@ -151,7 +151,7 @@ Uses:
   * Admin
   * OR 2-of-3 device consensus
 
-👉 Inspired by distributed consensus systems
+ Inspired by distributed consensus systems
 
 ---
 
