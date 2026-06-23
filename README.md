@@ -138,7 +138,7 @@ Uses:
 * Timestamp comparison
 * Device priority
 
-👉 **Novelty**: Distributed state reconciliation for user control systems
+ **Novelty**: Distributed state reconciliation for user control systems
 
 ---
 
