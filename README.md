@@ -174,7 +174,7 @@ Uses:
 * PyTorch / TensorFlow Lite (future)
 * Federated Learning (optional)
 
-### 🔐 Security & Privacy
+### Security & Privacy
 
 * OAuth 2.0 (Authentication)
 * End-to-End Encryption (planned)
