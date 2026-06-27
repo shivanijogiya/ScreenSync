@@ -157,7 +157,7 @@ Uses:
 
 ##  Tech Stack
 
-### 🧩 Backend
+###  Backend
 
 * FastAPI (Python)
 * SQLAlchemy (ORM)
