@@ -219,7 +219,7 @@ Uses:
 
 ---
 
-## 🏆 Project Significance
+##  Project Significance
 
 This project goes beyond a basic application and demonstrates:
 
